@@ -1,0 +1,8 @@
+<section id="superbar">
+    <div class="logo"></div>
+    <div class="items">
+        <div class="item" *ngFor="let item of menu" (click)="go(item.route)"  [ngClass]="{selected: is(item.route)}" >
+            <div class="label">{{item.label}}</div>
+        </div>
+    </div>
+</section>
